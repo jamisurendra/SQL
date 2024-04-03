@@ -1,3 +1,41 @@
 Here are 100+ MySQL interview questions with their answers, ranging from basic to more intermediate topics: 
- Q) How do you create a new database in MySQL? 
- A: CREATE DATABASE database_name;
+Q) How do you create a new database in MySQL? 
+Answer: CREATE DATABASE database_name;
+
+Q) What is the difference between an INNER JOIN and a LEFT JOIN ? 
+Answer: An INNER JOIN returns rows when there is a match in both tables, while a LEFT JOIN returns all rows from the left table and the matched rows from the right table. 
+If there's no match, the result is NULL on the right side. 
+
+Q) What is normalization, and why is it important? 
+Answer: Normalization is the process of organizing a database to reduce redundancy and ensure data integrity. 
+It divides larger tables into smaller ones and establishes relationships between them using foreign keys. 
+
+Q) Describe 1NF, 2NF, and 3NF in database normalization.
+Answer: 
+1NF (First Normal Form): Each table has a primary key, and all attributes are atomic (no repeating groups or arrays). 
+2NF (Second Normal Form): All non-key attributes are fully functionally dependent on the primary key. 
+3NF (Third Normal Form): All attributes are functionally dependent only on the primary key. 
+
+Q) What is a subquery, and how is it different from a JOIN? 
+Answer: A subquery is a query nested inside another query. 
+A subquery can return data that will be used in the main query as a condition. 
+A JOIN is used to combine rows from two or more tables based on a related column.
+
+Q) What is a stored procedure in MySQL? 
+Answer: A stored procedure is a precompiled group of SQL statements stored in the database. 
+It can be invoked as needed. 
+
+Q) How can you handle errors in stored procedures? 
+Answer: In MySQL, you can use the DECLARE statement to define error handlers using CONTINUE or EXIT handlers. 
+
+Q) How do you prevent SQL injection in your queries? 
+Answer: Use parameterized queries or prepared statements, avoid constructing queries with string concatenation using external input, and always validate and sanitize user input. 
+
+Q) What are TRIGGERS in MySQL? 
+Answer: Triggers are automatic actions that the database can perform when a specified change occurs (like an INSERT , UPDATE , or DELETE operation). 
+
+Q) Can you explain the difference between CHAR_LENGTH and LENGTH functions? 
+Answer: CHAR_LENGTH returns the number of characters in a string, while LENGTH returns the number of bytes. For single-byte character sets, they return the same value. 
+
+Q)What is the purpose of the GROUP_CONCAT function in MySQL? 
+Answer: GROUP_CONCAT returns a concatenated string of aggregated data values for each group of rows in the result set.
