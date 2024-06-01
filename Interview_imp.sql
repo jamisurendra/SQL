@@ -35,6 +35,8 @@ FROM employees w,
 WHERE w.manager_id = m.emp_id
   AND w.salary> m.salary;
 
+Spark loads data into memory in the form of partitions. In an ideal world, this distribution of data among the partitions is uniform. 
+But in real world, when one or more partitions have significantly more data compared to the others, is called data skewness
 /*
 6- Some row level scanning medium to complex questions using CTE or recursive CTE, like (Missing no /Missing Item from the list etc.)
 7- No of matches played by every team or Source to Destination flight combination using CROSS JOIN.
